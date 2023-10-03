@@ -11,11 +11,7 @@ Ans)
 2. docker run -d -p 9090:80 --name assignment-2-I20-0508 --network assignment-2 nginx:1.24.0
 
 Q3) Run the above command and add screenshot of it and share the logs
-
-![](/screenshots/1st.png)
-
-![](/screenshots/2nd.png)
-
-![](/screenshots/3rd.png)
-
+![](screenshots/1st.PNG)
+![](screenshots/2nd.PNG)
+![](screenshots/3rd.PNG)
 
