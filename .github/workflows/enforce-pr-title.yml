@@ -12,7 +12,9 @@ jobs:
   title-check:
     runs-on: ubuntu-22.04
     permissions:
+      contents: write
       pull-requests: write
+      issues: write
     steps:
     - uses: KyoriPowered/action-regex-match@v4
       id: regex-match
