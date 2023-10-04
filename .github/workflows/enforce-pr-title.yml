@@ -39,7 +39,7 @@ jobs:
             echo "Roll Number: $roll_number"
             echo "Full Name: $full_name"
         else
-          echo "error: PR title is wrong, it should be of the format `Assignment 2 - I120198 - ALI-KAHOOT`"
+          echo "error: PR title is wrong, it should be of the format 'Assignment 2 - I120198 - ALI-KAHOOT'"
           exit 1
         fi
     
