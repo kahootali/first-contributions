@@ -16,6 +16,7 @@ jobs:
     - uses: KyoriPowered/action-regex-match@v3
       id: regex-match
       with:
+        flags: "gm"
         text: ${{ github.event.pull_request.title }}
         regex: 'Assignment (\d+) - ([A-Za-z])(\d{2}-\d{4}|\d{6}) - ([A-Za-z]+-[A-Za-z]+)'
     # - name: Check PR title
