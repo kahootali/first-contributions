@@ -44,7 +44,19 @@ PS C:\Users\Sherwan Qadir\Desktop\Devops_A2> docker logs assignment-2-I20-0689
 2023/10/03 23:12:23 [notice] 1#1: start worker process 30
 2023/10/03 23:12:23 [notice] 1#1: start worker process 31
 2023/10/03 23:12:23 [notice] 1#1: start worker process 32
-2023/10/03 23:12:23 [notice] 1#1: start worker process 33
+2023/10/03 23:12:23 [notice]![Devops1](https://github.com/OogwayKP/first-contributions/assets/129097838/0f22acc9-b850-43a8-bef9-d4d0fed2829a)
+ 1#1: start worker process 33
 2023/10/03 23:12:23 [notice] 1#1: start worker process 34
 2023/10/03 23:12:23 [notice] 1#1: start worker process 35
 2023/10/03 23:12:23 [notice] 1#1: start worker process 36
+
+![Devops1](https://github.com/OogwayKP/first-contributions/assets/129097838/bbbbbdbd-778b-4c11-a183-0757dde468dc)
+
+
+![Devops2](https://github.com/OogwayKP/first-contributions/assets/129097838/07d7bfc9-7d0b-4046-a6b1-c3a8aabeb2c4)
+
+![Devops3](https://github.com/OogwayKP/first-contributions/assets/129097838/1dfa41fc-0ece-4416-9136-8395cc89f1bb)
+
+
+
+
