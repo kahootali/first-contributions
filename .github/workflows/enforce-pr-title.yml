@@ -1,0 +1,47 @@
+name: "Enforce PR Title should be Correct"
+
+on:
+  pull_request_target:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - edited
+
+jobs:
+  title-check:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    steps:
+
+    - name: Check PR title
+      run: |
+        title="${{ github.event.pull_request.title }}"
+        pattern="Assignment ([0-9]+) - ([A-Za-z])([0-9]+) - ([A-Za-z]+-[A-Za-z]+)"
+
+        if [[ $title =~ $pattern ]]; then
+            assignment_number="${BASH_REMATCH[1]}"
+            city="${BASH_REMATCH[2]}"
+            roll_number="${BASH_REMATCH[3]}"
+            full_name="${BASH_REMATCH[4]}"
+            
+            echo "Assignment Number: $assignment_number"
+            echo "City: $city"
+            echo "Roll Number: $roll_number"
+            echo "Full Name: $full_name"
+        else
+          echo "error: PR title is wrong, it should be of the format 'Assignment 2 - I120198 - ALI-KAHOOT'"
+          exit 1
+        fi
+    
+    - name: Notify on PR if failure
+      if: failure()
+      uses: mshick/add-pr-comment@v2.8.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        message: '@${{ github.actor }} The pipeline failed! Check the PR title it should match `Assignment 2 - I120198 - ALI-KAHOOT`'
+        message-id: ${{ github.run_id }}-${{ github.run_attempt }}
