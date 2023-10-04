@@ -19,16 +19,26 @@ jobs:
         flags: "gm"
         text: ${{ github.event.pull_request.title }}
         regex: 'Assignment (\d+) - ([A-Za-z])(\d{2}-\d{4}|\d{6}) - ([A-Za-z]+-[A-Za-z]+)'
-    # - name: Check PR title
-    #   run: |
-    #     title="${{ github.event.pull_request.title }}"
-        
-    #     pattern="Assignment (\d+) - ([A-Za-z])(\d{2}-\d{4}|\d{6}) - ([A-Za-z]+-[A-Za-z]+)"
 
-    #     if [[ ! ${title} =~ ${pattern} ]]; then
-    #       echo "error: PR title is wrong, it should be of the format 'Assignment <NUMBER> - <CITY><ROLL_NUMBER> - <FIRST_NAME-LAST_NAME>'"
-    #       exit 1
-    #     fi
+    - name: Check PR title
+      run: |
+        title="${{ github.event.pull_request.title }}"
+        pattern="Assignment ([0-9]+) - ([A-Za-z])([0-9]+) - ([A-Za-z]+-[A-Za-z]+)"
+
+        if [[ $title =~ $pattern ]]; then
+            assignment_number="${BASH_REMATCH[1]}"
+            city="${BASH_REMATCH[2]}"
+            roll_number="${BASH_REMATCH[3]}"
+            full_name="${BASH_REMATCH[4]}"
+            
+            echo "Assignment Number: $assignment_number"
+            echo "City: $city"
+            echo "Roll Number: $roll_number"
+            echo "Full Name: $full_name"
+        else
+          echo "error: PR title is wrong, it should be of the format 'Assignment <NUMBER> - <CITY><ROLL_NUMBER> - <FIRST_NAME-LAST_NAME>'"
+          exit 1
+        fi
     
     - name: Notify on PR if failure
       if: failure()
