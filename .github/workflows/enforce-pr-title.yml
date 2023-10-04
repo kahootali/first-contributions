@@ -11,7 +11,8 @@ on:
 jobs:
   title-check:
     runs-on: ubuntu-22.04
-
+    permissions:
+      pull-requests: write
     steps:
     - uses: KyoriPowered/action-regex-match@v4
       id: regex-match
@@ -36,7 +37,7 @@ jobs:
             echo "Roll Number: $roll_number"
             echo "Full Name: $full_name"
         else
-          echo "error: PR title is wrong, it should be of the format 'Assignment <NUMBER> - <CITY><ROLL_NUMBER> - <FIRST_NAME-LAST_NAME>'"
+          echo "error: PR title is wrong, it should be of the format `Assignment 2 - I120198 - ALI-KAHOOT`"
           exit 1
         fi
     
@@ -46,5 +47,5 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        message: '@${{ github.actor }} The pipeline failed! Check the PR title it should match `Assignment <NUMBER> - <CITY><ROLL_NUMBER> - <FIRST_NAME-LAST_NAME>`'
+        message: '@${{ github.actor }} The pipeline failed! Check the PR title it should match `Assignment 2 - I120198 - ALI-KAHOOT`'
         message-id: ${{ github.run_id }}-${{ github.run_attempt }}
