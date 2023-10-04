@@ -13,16 +13,21 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-    - name: Check PR title
-      run: |
-        title="${{ github.event.pull_request.title }}"
+    - uses: KyoriPowered/action-regex-match@v3
+      id: regex-match
+      with:
+        text: ${{ github.event.pull_request.title }}
+        regex: 'Assignment (\d+) - ([A-Za-z])(\d{2}-\d{4}|\d{6}) - ([A-Za-z]+-[A-Za-z]+)'
+    # - name: Check PR title
+    #   run: |
+    #     title="${{ github.event.pull_request.title }}"
         
-        pattern="Assignment (\d+) - ([A-Za-z])(\d{2}-\d{4}|\d{6}) - ([A-Za-z]+-[A-Za-z]+)"
+    #     pattern="Assignment (\d+) - ([A-Za-z])(\d{2}-\d{4}|\d{6}) - ([A-Za-z]+-[A-Za-z]+)"
 
-        if [[ ! ${title} =~ ${pattern} ]]; then
-          echo "error: PR title is wrong, it should be of the format `Assignment <NUMBER> - <CITY><ROLL_NUMBER> - <FIRST_NAME-LAST_NAME>`"
-          exit 1
-        fi
+    #     if [[ ! ${title} =~ ${pattern} ]]; then
+    #       echo "error: PR title is wrong, it should be of the format 'Assignment <NUMBER> - <CITY><ROLL_NUMBER> - <FIRST_NAME-LAST_NAME>'"
+    #       exit 1
+    #     fi
     
     - name: Notify on PR if failure
       if: failure()
