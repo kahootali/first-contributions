@@ -1,7 +1,7 @@
 name: "Enforce PR Title should be Correct"
 
 on:
-  pull_request:
+  pull_request_target:
     types:
       - opened
       - synchronize
@@ -16,12 +16,6 @@ jobs:
       pull-requests: write
       issues: write
     steps:
-    - uses: KyoriPowered/action-regex-match@v4
-      id: regex-match
-      with:
-        flags: "gm"
-        text: ${{ github.event.pull_request.title }}
-        regex: 'Assignment (\d+) - ([A-Za-z])(\d{2}-\d{4}|\d{6}) - ([A-Za-z]+-[A-Za-z]+)'
 
     - name: Check PR title
       run: |
