@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-    - uses: actions-ecosystem/action-regex-match@v2
+    - uses: KyoriPowered/action-regex-match@v4
       id: regex-match
       with:
         flags: "gm"
