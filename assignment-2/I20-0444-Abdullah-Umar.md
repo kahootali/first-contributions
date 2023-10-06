@@ -13,10 +13,10 @@
 
 1. First to create the network we run:-
 
-docker network create assignment-2
+**docker network create assignment-2**
 
 2. Then we run the container for this case with the following command:-
 
-docker run -d --name assignment-2-I20-0444 --network assignment-2 -p 9090:80 nginx:1.24.0
+**docker run -d --name assignment-2-I20-0444 --network assignment-2 -p 9090:80 nginx:1.24.0**
 
 Here, -d is for running in detached state, --name flag is used to specify the name of running container, --network flag is for specifying which network this container belongs to, -p is used to specify that container runs on host port 9090 and container port 80, and nginx:1.24.0 is the image we want to run
