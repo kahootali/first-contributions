@@ -24,5 +24,18 @@ Virtual Machines (VMs):
 
 5.Key Features: VMs come with a full operating system, they always use the same amount of computer power and memory, and they need a lot of computer resources to work.
 
+                        ---------------------------------------------------------------
 
+Q2) Write command to create a docker container in detached mode with name assignment-2-<ROLL_NUMBER> running on host port 9090 and container port 80 using image nginx with version 1.24.0 on a custom network named assignment-2?
+
+docker network create assignment-2
+
+docker run -d --name assignment-2-I20-0766 -p 9090:80 --network assignment-2 nginx:1.24.0
+
+                        --------------------------------------------------------------
+
+Q3) Run the above command and add screenshot of it and share the logs?
+
+![Alt text](Terminal.png) 
+![Alt text](Docker.png)
 
