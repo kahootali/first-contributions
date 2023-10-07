@@ -28,3 +28,10 @@ VMs (Virtual Machines):
 
 5. Key Features: Important characteristics: full OS, static computation, static memory, and significant resource consumption.
 
+
+
+
+Q2) Write command to create a docker container in `detached` mode with name `assignment-2-<ROLL_NUMBER>` running on host port `9090` and container port `80` using image `nginx` with version `1.24.0` on a custom network named `assignment-2`
+
+
+
