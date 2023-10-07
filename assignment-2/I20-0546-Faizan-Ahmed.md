@@ -14,3 +14,8 @@ However, isolation in containers is process-level and somewhat less secure compa
 VMs, on the other hand, operate on the principle of hardware-level virtualization. They abstract the physical hardware and each VM runs its own full operating system alongside the application, binaries, and libraries. As a result, VMs tend to be quite bulky, sometimes taking up tens of gigabytes. VMs are isolated from one another , unlike applications, providing complete OS isolation. However, they're pretty static when it comes to resource allocation, and they demand a significant amount of resources.
 
 From an operational perspective, VMs are the responsibility of Ops. Ops not only create VMs but also deal with installing software dependencies and software itself. This can be a bit of a problem due to potential compatibility issues. On the other hand, developers write their code and test it on their local machines, which can lead to "Works on my machine" issue.
+
+Answer 2:-
+
+sudo docker network create assignment-2
+sudo docker run -d --name assignment-2-20I-0546 -p 9090:80 --network assignment-2 nginx:1.24.0
