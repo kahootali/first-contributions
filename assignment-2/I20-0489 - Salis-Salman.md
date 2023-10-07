@@ -9,4 +9,20 @@
 5. Containers are lightweight and portable, whereas virtual machines (VMs) require more resources than containers but can be run on any infrastructure that supports them.
 6. VMs have static compute, static high Resource and usages whereas containers are dynamic in nature with low resource consumption but can be scaled up or down on demand.
 
+# Question-2
+Creating the required network using:
+ ->docker network create assignment-2
+
+Launch the designated container using:
+ ->docker run -d --name assignment-2-I20-0489 --network assignment-2 -p 9090:80 nginx:1.24.0
+
+Explaination of Launch Command:
+-> docker run [OPTIONS] IMAGE[:TAG|@DIGEST] COMMAND [ARG...]
+Run a command in a new container.
+Options:
+    -d : Detached mode: Run container in background and print container ID.
+    -name="nginx" : Assign a name to the container.
+    -network: Connect a container to a network.
+    -p : Publish a container's port(s) to the host (format: ip:hostPort:containerPort)
+
 
