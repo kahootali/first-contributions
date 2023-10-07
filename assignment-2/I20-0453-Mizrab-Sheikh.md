@@ -12,6 +12,10 @@ docker run -d --name assignment-2-I20-0453 -p 9090:80 --network assignment-2 ngi
 
 Screenshot:
 
-<img src="container-creation.png" title="" alt="" width="923">
+<img src="container-creation.png" title="" alt="" width="900">
 
-Since we are running in detached mode, the terminal is free to use for any other purposes.
+ *Since we are running in detached mode, the terminal is free to use for any other purposes.
+
+
+
+<img src="docker-terminal.png" title="" alt="" width="900">
