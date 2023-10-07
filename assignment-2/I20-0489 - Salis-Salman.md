@@ -25,4 +25,7 @@ Options:
     -network: Connect a container to a network.
     -p : Publish a container's port(s) to the host (format: ip:hostPort:containerPort)
 
-
+# Question-3
+Commands screenshot: Docker-Commands.png [Root]
+Running Container: Running-Container.png [Root]
+Nginx Running: Nginx-Running.png [Root]
