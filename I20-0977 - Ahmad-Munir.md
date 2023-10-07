@@ -35,3 +35,6 @@ Q2) Write command to create a docker container in `detached` mode with name `ass
 
 
 
+![Alt text](image.png)
+
+![Alt text](image-1.png)
