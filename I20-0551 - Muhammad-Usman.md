@@ -16,3 +16,7 @@ VMs (Virtual Machines):
 Q2:
 docker network create assignment-2
 docker run -d --name assignment-2-I20-0551 -p 9090:80 --network assignment-2 nginx:1.24.0
+
+Q3:
+![Alt text](s1-1.png) 
+![Alt text](s2-1.png)
