@@ -27,7 +27,7 @@ $ docker network create assignment-2
 
 To create container:
 ```cmd
-$ docker run -d --name assignment-2-<ROLL_NUMBER> -p 9090:80 --network assignment-2 nginx:1.24.0
+$ docker container run -d --publish 9090:80 --name assignment-2-I19-1715 --network assignment-2 nginx:1.24.0
 ```
 
 **Note:** I had to use `sudo` with both commands as I needed superuser permissions for both the commands to work for me
