@@ -12,4 +12,4 @@ Q2) Write command to create a docker container in `detached` mode with name `ass
 
 Q3) Run the above command and add screenshot of it and share the logs
 
-![1696696205791](image/I20-0542-BILAL-KHAN/1696696205791.png)
+![1696696569422](image/I20-0542-BILAL-KHAN/1696696569422.png)
