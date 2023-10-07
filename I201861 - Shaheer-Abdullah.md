@@ -27,3 +27,14 @@ Virtual Machines (VMs):
 5.Key Features: VMs have their full operating systems, and they use a fixed amount of resources. They can be resource-hungry because they act like real computers.
 
 6.Security: VMs are more secure as they have separate kernal and don't share the kernal of host os.
+
+
+Q2 Write command to create a docker container in detached mode with name assignment-2-<ROLL_NUMBER> running on host port 9090 and container port 80 using image nginx with version 1.24.0 on a custom network named assignment-2
+
+docker network create assignment-2
+docker run -d --name assignment-2-I20-1861 -p 9090:80 --network assignment-2 nginx:1.24.0
+
+Q3 Run the above command and add screenshot of it and share the logs
+
+![Alt text](Commands_SS.png)
+![Alt text](Docker_SS.png)
