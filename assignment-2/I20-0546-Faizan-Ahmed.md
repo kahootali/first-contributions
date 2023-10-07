@@ -18,7 +18,7 @@ From an operational perspective, VMs are the responsibility of Ops. Ops not only
 Answer 2:-
 
 sudo docker network create assignment-2
-sudo docker run -d --name assignment-2-20I-0546 -p 9090:80 --network assignment-2 nginx:1.24.0Answer 3:-
+sudo docker run -d --name assignment-2-I20-0546 -p 9090:80 --network assignment-2 nginx:1.24.0Answer 3:-
 
 faizan@faizan-VirtualBox:~$ sudo docker logs assignment-2-I20-0546 > container_logs.txt
 2023/10/07 22:31:05 [notice] 1#1: using the "epoll" event method
