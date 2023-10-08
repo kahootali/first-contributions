@@ -13,3 +13,6 @@ Virtual Machines(VM):
 4) Portability may be more complex due to dependencies on hypervisors.
 5) Commonly used for running multiple applications with different OS requirements.
 
+
+sudo docker run -d --name assignment-2-I20-0586 -p 9090:80 --network assignment-2 nginx:1.24.0
+
