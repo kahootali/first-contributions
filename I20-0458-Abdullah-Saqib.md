@@ -1,0 +1,3 @@
+Q1: Docker container is OS level virtualization, while VM is hardware level virtualization. Containers share hardware and the host kernal aswell (sharing the same kernal), but VMs share hardware but have their own OS. Containers are isolated from eachother aswell as the their applications, while VMs are islolated from eachother but not their sapplications.
+
+Q2: sudo docker run -d --name assignment-2-I20-0458 -p 9090:80 --network assignment-2 nginx
