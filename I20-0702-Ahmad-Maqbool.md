@@ -21,3 +21,7 @@ Choose Docker containers for agility and efficiency, VMs for strong isolation an
 Q2)
 docker network create assignment-2
 docker run -d -p 9090:80 --network assignment-2 --name assignment-2-I20-0702 nginx:1.24.0
+
+Q3)![](logs.PNG)
+   ![](devopscontainerrun.PNG)
+
