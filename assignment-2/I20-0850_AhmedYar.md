@@ -28,6 +28,22 @@ docker network create assignment-2
 ![Local Screenshot](ss2.png)
 
 
+Other SS form git
+
+
+![Local Screenshot](AY-1.png)
+![Local Screenshot](AY-2.png)
+![Local Screenshot](AY-3.png)
+![Local Screenshot](AY-4.png)
+![Local Screenshot](AY-5.png)
+![Local Screenshot](AY-6.png)
+![Local Screenshot](AY-7.png)
+
+
+
+
+
+
 
 
 
