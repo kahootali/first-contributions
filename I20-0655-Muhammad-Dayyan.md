@@ -26,4 +26,6 @@ Virtual Machines (VMs):
 
 
 (Q3) Run the above command and add screenshot of it and share the logs
-![Alt text](<first-contributions/Screenshot 2023-10-08 142033.png>)
+
+![Screenshot](Screenshot 2023-10-08 142033.png)
+
