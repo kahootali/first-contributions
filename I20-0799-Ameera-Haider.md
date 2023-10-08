@@ -36,4 +36,4 @@ docker run -d --name assignment-2-I20-0799 -p 9090:80 --network assignment-2 ngi
 
 **Q3) Docker Container Creation and Screenshot**
 
-Screenshots of the Docker container creation command and the logs have been added to the repository.
+Screenshots of the Docker container creation command and the logs have been added to the repository
