@@ -15,3 +15,9 @@ Docker Containers: Containers are resource-efficient, with burstable memory that
 Startup Time :
 Virtual Machines (VMs): VMs take longer to start because they need to boot an entire operating system.
 Docker Containers: Containers start up almost instantly since they don't require booting a full OS.
+
+Q2)
+For this question I have used these commands.
+
+docker --version
+docker run -d --name assignment-2-I190431 -p 9090:80 --network assignment-2 nginx:1.24.0
