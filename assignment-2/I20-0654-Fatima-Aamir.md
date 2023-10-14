@@ -23,7 +23,9 @@ Creating container: docker container run -d --publish 9090:80 --name assignment-
 ## Question 3
 # Screenshots: 
 
-![1](<Screenshot 2023-10-04 at 12.08.51 PM.png>) ![2](<Screenshot 2023-10-04 at 12.09.22 PM.png>)
+![1](<Screenshot 2023-10-04 at 12.08.51 PM.png>) 
+<img width="919" alt="Screenshot 2023-10-14 at 2 07 56 PM" src="https://github.com/fatima-aamir/first-contributions/assets/108588610/1db4c87a-72b9-4fb4-a817-8b0ac7d546b3">
+
 
 
 # Logs
