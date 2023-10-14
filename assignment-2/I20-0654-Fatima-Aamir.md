@@ -18,13 +18,13 @@
 ## Question 2
 # Command: 
 Creating network: docker network create assignment-2
-Creating container: docker container run -d --publish 9090:80 --name assignment-2-I20-0437 --network assignment-2 nginx:1.24.0
+Creating container: docker container run -d --publish 9090:80 --name assignment-2-I20-0654 --network assignment-2 nginx:1.24.0
 
 ## Question 3
 # Screenshots: 
 
 ![1](<Screenshot 2023-10-04 at 12.08.51 PM.png>) ![2](<Screenshot 2023-10-04 at 12.09.22 PM.png>)
-![3](<Screenshot 2023-10-04 at 12.14.13 PM.png>)
+
 
 # Logs
 2023-10-04 12:06:52 /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
