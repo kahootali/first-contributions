@@ -34,7 +34,7 @@ In a Single command:
 
 **Q3) Run the above command and add screenshot of it and share the logs**
 Ans) 
-![Screenshot Task-2](Task-2.png)
+![Screenshot Task-2](screentshots\i200463-Task-2.png)
 
 
 
