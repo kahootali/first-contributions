@@ -21,6 +21,6 @@ docker network ls
 
 ### Q3. Run the above command and add screenshot of it and share the logs
 
-![Screenshot of docker container running after executing Q2 command](Screenshot of container running.png)
+![Screenshot of docker container running after executing Q2 command](./screenshots/20I-0447_01.png)
 
-![Screenshot of logs generated after executing Q2 command](Screenshot of container logs.png)
+![Screenshot of logs generated after executing Q2 command](./screenshots/20I-0447_02.png)
