@@ -9,7 +9,7 @@ Commmand is as following:
 
 ### Q3) Run the above command and add screenshot of it and share the logs
 
-![ScreenShot](./nginx.png)
+![ScreenShot](./screenshots/I202445-nginx-logs.png)
 
 Logs are as following
 ```
